@@ -18,7 +18,7 @@ function App() {
           <Route path="/simple/clock" element={<Clock />} />
           <Route path="/simple/slider" element={<Slider />} />
           <Route path="/simple/advanceslider" element={<AdvanceSlider />} />
-          <Route path="/simple/cude" element={<Cube />} />
+          <Route path="simple/cude" element={<Cube />} />
           <Route path="/simple/3dImage" element={<Image3dGallary />} />
         </Route>
       </Routes>

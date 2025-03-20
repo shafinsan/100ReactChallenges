@@ -6,7 +6,7 @@ function Image3dGallary() {
     const angle = 360 / AllImage.length;
   return (
     <div 
-    className="relative h-screen flex justify-center items-center bg-white overflow-hidden"
+    className="flex bg-white h-screen justify-center items-center overflow-hidden relative"
     style={{ perspective: "1000px" }}
   >
     <motion.div
@@ -19,7 +19,7 @@ function Image3dGallary() {
         ease: "linear",
         repeatType: "loop",
       }}
-      className="w-[150px] h-[150px] absolute"
+      className="h-[100px] w-[100px] absolute lg:h-[150px] lg:w-[150px]"
       style={{
         transform: "rotateX(-15deg) rotateY(15deg)",
         transformStyle: "preserve-3d",
@@ -28,9 +28,9 @@ function Image3dGallary() {
     >
       {AllImage.map((d, i) => (
         <div
-          className="absolute w-full h-full inset-0"
+          className="h-full w-full absolute inset-0"
           style={{
-            transform: `rotateY(${i * angle}deg) translateZ(300px)`,
+            transform: `rotateY(${i * angle}deg) translateZ(200px)`,
             transformStyle: "preserve-3d",
           }}
         >
@@ -38,7 +38,7 @@ function Image3dGallary() {
             key={i}
             src={d}
             alt="/"
-            className="absolute w-full h-full object-cover"
+            className="h-full w-full absolute object-cover"
           />
         </div>
       ))}

@@ -24,7 +24,7 @@ function Header() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            className="dropdown-content bg-base-100 p-2 rounded-box shadow w-52 menu menu-sm mt-3 z-1"
           >
             <li>
               <a>Simple</a>
@@ -45,7 +45,7 @@ function Header() {
                   <NavLink to="simple/advanceslider">Slider2</NavLink>
                 </li>
                 <li>
-                  <NavLink to="simple/cube">Cube</NavLink>
+                  <NavLink to="simple/cude">Cube</NavLink>
                 </li>
                 <li>
                   <NavLink to="simple/3dImage">3D Image</NavLink>
