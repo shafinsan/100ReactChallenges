@@ -5,6 +5,8 @@ import ichigo from "../../public/image/Myichigo.jpg";
 import natsu from "../../public/image/natsu.jpg";
 import sakuna from "../../public/image/sakuna.jpg";
 import zeref from "../../public/image/zeref.jpg";
+import ratImage from "../../public/image/rat.png"
+export const MyRat=[ratImage];
 export const AllImage = [
   gojo,
   kaneki,

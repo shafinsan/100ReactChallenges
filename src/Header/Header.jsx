@@ -50,10 +50,18 @@ function Header() {
                 <li>
                   <NavLink to="simple/3dImage">3D Image</NavLink>
                 </li>
+                <li>
+                  <NavLink to="simple/AdvanceLoading">Loading</NavLink>
+                </li>
               </ul>
             </li>
             <li>
-              <NavLink to="About">Complex</NavLink>
+              <a>Complex</a>
+              <ul className="p-2 z-10">
+                <li>
+                  <NavLink to="complex/rat">Rat</NavLink>
+                </li>
+              </ul>
             </li>
             <li>
               <NavLink to="Contact">Compound</NavLink>
@@ -89,11 +97,21 @@ function Header() {
                 <li>
                   <NavLink to="simple/3dImage">3D Image</NavLink>
                 </li>
+                <li>
+                  <NavLink to="simple/AdvanceLoading">Loading</NavLink>
+                </li>
               </ul>
             </details>
           </li>
           <li>
-            <NavLink to="About">Complex</NavLink>
+            <details>
+              <summary>Complex</summary>
+              <ul className="p-2 z-10">
+                <li>
+                  <NavLink to="complex/rat">Rat</NavLink>
+                </li>
+              </ul>
+            </details>
           </li>
           <li>
             <NavLink to="Contact">Compound</NavLink>
